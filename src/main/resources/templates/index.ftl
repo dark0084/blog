@@ -13,14 +13,18 @@
     }
     </style>
 
-    <title>널익셉션의 개발블로그</title>
+    <title>널익셉션의 블로그</title>
   </head>
   <body>
-    <h1>널익셉션의 개발블로그</h1>
-    <hr>
+    <div class="jumbotron text-center">
+      <h1>널익셉션의 블로그</h1>
+    </div>
+    
     <#list posts?reverse as post>
-      <h3>${post.getTitle()}</h3> ${post.getDate()?string('yyyy년 MM월 dd일 HH시 mm분')}
-      <p>${post.getContent()}</p>
+      <div class="container">
+        <h3>${post.getTitle()} <small> ${post.getDate()?string('yyyy/MM/dd HH:mm:ss')}</small></h3> 
+        <p>${post.getContent()}</p>
+      </div>
     <#else>
       <p> 포스트가 없습니다. </p>
     </#list>
