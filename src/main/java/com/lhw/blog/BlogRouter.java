@@ -16,12 +16,7 @@ import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
 import org.springframework.ui.ModelMap;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.List;
-import java.util.ArrayList;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 
 @Configuration
 public class BlogRouter {
